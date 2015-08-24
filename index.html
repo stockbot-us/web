@@ -1,0 +1,79 @@
+<html>
+<head>
+
+    <title>Stockerbot</title>
+    
+    <link rel="stylesheet" href="css/bower.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
+    <script type="text/javascript" src="js/bower.min.js"></script>
+    <script type="text/javascript" src="js/app.min.js"></script>
+    
+    <meta name="description" content="Post stock information to slack">
+    <meta property="og:title" content="Stocker - Share stock infomation w/ your team in realtime">
+    <meta property="og:site_name" content="Slocker">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Have stock, will travel">
+    <meta property="og:image" content="">
+  </head>
+  <body>
+
+  <div class="home header">
+
+  <div class="header">
+    <h1>Stocker</h1>
+    <h2>Post stock information to <a href="https://slack.com/" target="_blank">Slack</a></h2>
+  </div>
+
+  <div class="signup">
+    <form ng-submit="homeService.createCompany()" class="ng-pristine ng-valid">
+      <!-- ngIf: previousCompany -->
+
+      <div class="form-group">
+        <label>Organisation name</label>
+        <input ng-model="company.name" class="form-control input-lg ng-pristine ng-valid" placeholder="My Organisation" autofocus="true">
+      </div>
+      
+      <div class="form-group pick-service" id="pick-service">
+        <ul class="nav nav-tabs">
+          <li id="slack-tab" class="active">
+            <a href="#" ng-click="homeService.pickService('slack')"><img src="slack-logo.png"></a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="form-group" id="slack-token" ng-class="{'has-error': errors.token}">
+        <label class="control-label">Slack API Token <!-- ngIf: errors.token --></label>
+        <input id="slack-token-input" ng-model="company.token" class="form-control input-lg ng-pristine ng-valid">
+        <div class="help-block">
+          <a href="https://api.slack.com/web#authentication" target="_blank">You can get a Slack API Token from https://api.slack.com/web#authentication</a>
+        </div>
+      </div>
+
+      <div class="form-group get-started">
+        <button type="submit" class="btn btn-danger btn-lg btn-block">Get started</button>
+      </div>
+    </form>
+  </div>
+  
+  <div class="info">
+    <div class="info-content">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Create a team or personal protfolio</h3>
+          <a href="portfolio-money.jpg" target="_blank"><img src="portfolio-money.jpg"></a>
+        </div>
+        
+        <div class="col-sm-6">
+          <h3>Add additional stocks and charts</h3>
+          <a href="portfolio-chart.jpg" target="_blank"><img src="portfolio-chart.jpg"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Made in 5 minutes from New York</a>
+  </div>
+  </div>
+
+</body></html>

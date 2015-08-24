@@ -1,0 +1,231 @@
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+.home .header {
+    max-width: 900px;
+    margin: auto auto 30px;
+    padding-top: 110px;
+    transition: background-position .2s ease;
+    -webkit-transition: background-position .2s ease;
+    -moz-transition: background-position .2s ease;
+    -o-transition: background-position .2s ease
+}
+.home .header:hover {
+    background-position: 50% 0
+}
+.home .header h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 0 0 10px;
+    padding: 0;
+    font-weight: 400
+}
+.home .header h2,
+.home .previous-company p {
+    text-align: center;
+    color: #999;
+    font-size: 20px
+}
+.home .header h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-weight: 400
+}
+.home .header h2 a {
+    color: #999;
+    text-decoration: underline
+}
+.home form {
+    max-width: 400px;
+    margin: auto
+}
+.home form .help-block a {
+    color: #999
+}
+.home .pick-service .nav>li.active>a>img {
+    opacity: 1
+}
+.home .pick-service .nav>li>a>img {
+    cursor: pointer;
+    opacity: .5
+}
+.home .get-started {
+    margin-top: 40px
+}
+.home .previous-company a,
+.home .previous-company p {
+    margin-bottom: 15px
+}
+.home .info {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background: #eee;
+    margin-top: 90px;
+    padding: 20px 0
+}
+.home .info .info-content {
+    max-width: 900px;
+    margin: auto
+}
+.home .info img {
+    max-width: 100%
+}
+.home .info h3 {
+    font-weight: 400;
+    color: #666;
+    text-align: center;
+    font-size: 18px
+}
+.home .footer {
+    text-align: center;
+    color: #888;
+    margin: 90px 0 20px
+}
+.home .footer a {
+    color: #888;
+    text-decoration: underline
+}
+.company .details {
+    width: 50%;
+    min-width: 320px;
+    padding: 20px
+}
+.company .about {
+    color: #ff8000;
+    position: fixed;
+    bottom: 10px;
+    right: 10px
+}
+.company .about a {
+    color: #ff8000;
+    text-decoration: underline
+}
+.company .panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #eee;
+    border-left: 1px solid #ccc;
+    padding: 20px
+}
+.company h1 {
+    margin: 0 0 25px;
+    font-weight: 400;
+    font-size: 25px
+}
+.company h1 a {
+    color: #999
+}
+.company h1 a:hover {
+    color: #666;
+    text-decoration: none
+}
+.company .filter {
+    margin-bottom: 20px
+}
+.company ul {
+    list-style: none;
+    margin: 0 0 0 -15px;
+    padding: 0;
+    width: 100%;
+    overflow: hidden
+}
+.company ul li {
+    float: left;
+    width: 80px;
+    margin: 0 15px 20px;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease
+}
+.company .pick-a-character {
+    background: url(/pick-a-character.png)30px 150px no-repeat #eee;
+    padding-top: 220px;
+    padding-left: 40px;
+    font-size: 30px;
+    color: #999;
+    font-family: "Gloria Hallelujah"
+}
+.company .character {
+    text-align: center;
+    cursor: pointer;
+    min-height: 155px
+}
+.company .character.custom {
+    color: #060
+}
+.company .character img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px
+}
+.company .selected {
+    opacity: .2
+}
+.company .new-message .character {
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px
+}
+.company .new-message .character img {
+    width: 100px;
+    height: 100px
+}
+.company .new-message .message {
+    margin-left: 120px;
+    background: #333;
+    border-radius: 6px;
+    padding: 10px;
+    position: relative
+}
+.company .new-message .message .arrow {
+    position: absolute;
+    top: 40px;
+    left: -20px;
+    width: 0;
+    height: 0;
+    border: 10px solid #333;
+    border-color: transparent #333 transparent transparent
+}
+.company .new-message .message .sending {
+    font-family: "Gloria Hallelujah";
+    font-size: 20px;
+    color: #999;
+    text-align: center;
+    padding: 50px
+}
+.company .new-message .message textarea {
+    background: 0 0;
+    color: #fff;
+    border: none;
+    width: 100%;
+    outline: 0;
+    font-family: "Gloria Hallelujah";
+    font-size: 20px;
+    margin-bottom: 5px
+}
+.company .new-message .character-actions {
+    margin-top: 10px;
+    padding-right: 10px;
+    text-align: right;
+    color: #999
+}
+.company .new-message .character-actions a {
+    color: #333
+}
+.company .custom-character .character {
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px
+}
+.company .custom-character .character img {
+    width: 100px;
+    height: 100px
+}
+.company .custom-character .character-details {
+    margin-left: 120px;
+    padding: 10px;
+    position: relative
+}
